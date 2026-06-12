@@ -25,9 +25,8 @@ export default function Categories() {
             >
               <Reveal delay={Math.min(i * 0.06, 0.3)} y={20}>
                 <article className="group overflow-hidden rounded-2xl border border-pitch-100 bg-pitch-50 transition hover:border-pitch-300 hover:shadow-lg hover:shadow-pitch-900/10">
-                  {/* Reemplazar por foto real de la categoría */}
                   <img
-                    src={`https://picsum.photos/seed/${c.seed}/640/400`}
+                    src={c.image}
                     alt={`Entrenamiento de la categoría ${c.name}`}
                     loading="lazy"
                     className="aspect-[8/5] w-full object-cover transition duration-500 group-hover:scale-[1.03]"

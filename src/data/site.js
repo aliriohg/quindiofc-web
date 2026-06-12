@@ -8,9 +8,9 @@ export const WHATSAPP_LINK = (
 ) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
 
 export const SEDE = {
-  nombre: "Cancha sintética La Esperanza", // <- reemplazar por la sede real
+  nombre: "Cancha sintética La Liga AXM", // <- reemplazar por la sede real
   direccion: "Armenia, Quindío, Colombia",
-  mapEmbed: "https://www.google.com/maps?q=Armenia,Quindio,Colombia&output=embed",
+  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.1539292109146!2d-75.64744071631742!3d4.566339230986243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5c67cd27467%3A0x41b01005477ab5d4!2sLa%20liga%20axm!5e0!3m2!1ses!2sus!4v1781231594116!5m2!1ses!2sus"
 };
 
 // Cifras de la escuela. Reemplazar por los datos reales.
@@ -21,36 +21,38 @@ export const STATS = [
   { value: "100%", label: "Entrenadores certificados" },
 ];
 
+// Cada categoría tiene su foto. Reemplazar "image" por la ruta de la foto real
+// (ej: guardar en public/categorias/ y usar "/categorias/semillitas.jpg").
 export const CATEGORIES = [
   {
     name: "Semillitas",
     ages: "4 a 6 años",
     focus: "Juego, coordinación y amor por el balón.",
-    seed: "qfc-semillitas",
+    image: "https://picsum.photos/seed/qfc-semillitas/640/400",
   },
   {
     name: "Sub-8",
     ages: "7 a 8 años",
     focus: "Fundamentos técnicos y primeros partidos.",
-    seed: "qfc-sub8",
+    image: "https://picsum.photos/seed/qfc-sub8/640/400",
   },
   {
     name: "Sub-10",
     ages: "9 a 10 años",
     focus: "Control, pase y lectura básica del juego.",
-    seed: "qfc-sub10",
+    image: "/categorias/cat2016.jpeg",
   },
   {
     name: "Sub-12",
     ages: "11 a 12 años",
     focus: "Táctica por líneas y competencia federada.",
-    seed: "qfc-sub12",
+    image: "https://picsum.photos/seed/qfc-sub12/640/400",
   },
   {
     name: "Sub-14",
     ages: "13 a 14 años",
     focus: "Posición, ritmo de juego y preparación física.",
-    seed: "qfc-sub14",
+    image: "https://picsum.photos/seed/qfc-sub14/640/400",
   },
 ];
 
@@ -119,18 +121,26 @@ export const TESTIMONIALS = [
 export const SCHEDULE = [
   {
     group: "Semillitas (4 a 6 años)",
-    times: ["Sábados 8:00 a 9:30 a.m."],
+    times: ["Martes, Miercoles y jueves 4:00 a 6:00 p.m."],
   },
   {
-    group: "Sub-8 y Sub-10",
-    times: ["Martes y jueves 5:00 a 6:30 p.m.", "Sábados 9:30 a 11:00 a.m."],
+    group: "Sub-8",
+    times: ["Martes, Miercoles y jueves 4:00 a 6:00 p.m."],
   },
   {
-    group: "Sub-12 y Sub-14",
-    times: ["Martes y jueves 6:30 a 8:00 p.m.", "Sábados 11:00 a 12:30 p.m."],
+    group: "Sub-9",
+    times: ["Martes, Miercoles y jueves 4:00 a 6:00 p.m."],
+  },
+   {
+    group: "Sub-10",
+    times: ["Lunes, Miercoles y jueves 4:00 a 6:00 p.m."],
+  },
+  {
+    group: "Sub-11 y Sub-14",
+    times: ["Lunes, Martes y jueves 6:30 a 8:00 p.m."],
   },
   {
     group: "Arqueros (todas las categorías)",
-    times: ["Viernes 5:00 a 6:30 p.m."],
+    times: ["Jueves 4:30 a 6:00 p.m."],
   },
 ];
