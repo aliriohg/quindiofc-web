@@ -1,0 +1,52 @@
+@import "@fontsource-variable/outfit";
+@import "tailwindcss";
+
+/*
+  Sistema de diseño Quindío F.C.
+  - Verde "pitch": tomado del escudo (degradado de verde grama).
+  - Dorado "gold": tomado de la cinta amarilla de la bandera del Quindío. Único acento.
+  - Radios: botones = pill, tarjetas = 16px (rounded-2xl), inputs = 12px (rounded-xl).
+  - Tema: claro, con bloques verde profundo como apertura (hero) y cierre (CTA final).
+*/
+@theme {
+  --font-sans: "Outfit Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --color-pitch-50: #f1faf3;
+  --color-pitch-100: #def5e5;
+  --color-pitch-200: #bde9cb;
+  --color-pitch-300: #8bd6a5;
+  --color-pitch-400: #4fba76;
+  --color-pitch-500: #289d54;
+  --color-pitch-600: #188141;
+  --color-pitch-700: #146636;
+  --color-pitch-800: #11522d;
+  --color-pitch-900: #0d3d22;
+  --color-pitch-950: #062615;
+
+  --color-gold-300: #ffe27a;
+  --color-gold-400: #fbd34d;
+  --color-gold-500: #f0bb1f;
+  --color-gold-600: #d19e0a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-pitch-50);
+  color: #1c2a21;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-gold-400);
+  color: var(--color-pitch-950);
+}
