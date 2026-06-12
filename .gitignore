@@ -8,6 +8,9 @@ dist/
 *.log
 npm-debug.log*
 
+# Claude Code
+.claude/
+
 # Editor / SO
 .vscode/*
 !.vscode/extensions.json
